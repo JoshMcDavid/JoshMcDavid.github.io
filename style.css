@@ -1,0 +1,136 @@
+html 
+{
+    font-size: 62.5%;
+    box-sizing: border-box;   
+}
+
+body 
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+*, *::after, *::before 
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+  }
+  
+.top
+{
+    width: 100vw;
+    height: 35vh;
+    background-image: url(images/pattern-bg-desktop.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0; 
+}
+
+
+.top1 
+{
+    width: 60vw;
+    text-align: center;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.header_name 
+{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 2.5rem; 
+    margin-top: -30px;
+}
+.input 
+{
+    width: 43%;
+    border-radius: 13px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 4.5rem; 
+    width: 500px;
+}
+.btn
+{
+cursor: pointer;
+}
+.input_ip 
+{
+    flex: 1;
+    background-color: #fff;
+    padding: 1.75rem;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+.input .btn 
+{
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: #000; 
+    
+}
+input .btn:hover 
+{
+    cursor: pointer;
+    background-color: #2b2b2b; 
+}
+
+.info_box 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3rem 0;
+    font-weight: 700; 
+    margin-top: -20px;
+}
+
+.result_info-box 
+{
+    text-align: left;
+    overflow-wrap: normal;
+    padding: 0 3rem;
+    flex: 1; 
+}
+
+.result_info-box:not(:first-child) 
+{
+    border-left: 2px solid #969696; 
+}
+
+.info_name 
+{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #969696;
+    margin-bottom: 1rem; 
+}
+.result_value 
+  {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2b2b2b; 
+}
+
+#map 
+{
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 65vh;
+    width: 100vw;
+    z-index: -1; 
+}

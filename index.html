@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top1">
+      <div class="header_name">
+        IP Address Tracker
+      </div>
+
+      <div class="input">
+        <label for="ip_address"></label>
+        <input type="text" class="input_ip" id="ip_address" name="ip-address" placeholder="Search for any IP address or domain">
+        <button class="btn" type="submit">
+          <img src="images/icon-arrow.svg" alt="submit-button">
+        </button>
+      </div>
+
+      <div class="info_box">
+        <div class="result_info-box info1">
+          <div class="info_name">IP Address</div>
+          <div class="ip_result result_value">--</div>
+        </div>
+        <div class="result_info-box info2">
+          <div class="info_name">Location</div>
+          <div class="user-location result_value">--</div>         
+        </div>
+        <div class="result_info-box info3">
+          <div class="info_name">Timezone</div>
+          <div class="user-timezone result_value">--</div>
+        </div>
+        <div class="result_info-box info4">
+          <div class="user-service-name info_name">ISP</div>
+          <div class="user-service-value result_value">--</div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mainjs.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
