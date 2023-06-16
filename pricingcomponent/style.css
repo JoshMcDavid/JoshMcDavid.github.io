@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 15px;
+  }
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+h1 {
+    color: var(--grayish-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+body {
+    box-sizing: border-box;
+    background-image: url(images/bg-top.svg);
+    background-color: hsl(240, 78%, 98%);
+    background-repeat: no-repeat;
+    background-size: 26.5%;
+    background-position: top 0 right -1rem, bottom -4.7rem left -1.9rem;
+    font-family: "Montserrat", sans-serif;;
+  }
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    padding-bottom: 0;
+    gap: 2.6rem;
+  }
+
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1.9rem;
+    align-items: center;
+  }
+
+.toggle {
+    border: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    width: 3.8rem;
+    height: 2.3rem;
+    border-radius: 25px;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  }
+
+.toggle_btn {
+    cursor: pointer;
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 5%;
+    border-radius: 50%;
+    background-color: hsl(240, 78%, 98%);
+  }
+
+.toggle.monthly {
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  
+  /* .toggle.anually {
+    justify-content: flex-start;
+    align-content: flex-start;
+  } */
+
+  /* .toggle-section p {
+    color: var(--light-grayish-blue);
+  } */
+
+.container {
+    display: grid;
+    width: 72%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    margin-top: 5.8rem;
+  }
+
+.pricing {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2.1rem 0.8rem;
+  }
+
+.pricing h2 {
+    font-size: 1.23rem;
+    font-weight: 700;
+  }
+
+.pricing p {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 auto;
+    font-size: 4.6rem;
+  }
+ .pricing span{
+    font-size: 2.5rem;
+  }
+
+.basic, .master {
+  background-color: white;
+  gap: 1.3rem;
+}
+
+.basic p, .master p {
+    color: hsl(232, 13%, 33%);
+}
+
+.professional {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    margin-top: -1.6rem;
+    margin-bottom: -1.6rem;
+    padding: 3rem 1rem;
+  }
+
+.basic h2,
+.basic li,
+.master h2,
+.master li {
+  color: hsl(234, 14%, 74%);
+}
+
+hr {
+    width: 90%;
+    border-width: 0.5px;
+    margin: 0 auto;
+    border-color: transparent;
+    border-color: hsl(234, 14%, 74%);
+    border-style: solid;
+    opacity: 0.5;
+  }
+  .pricing ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .pricing ul li {
+    padding: 1.06rem;
+  }
+  
+  .pricing button {
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .professional button {
+    color: hsl(237, 63%, 64%);
+    background-color: white;
+  }
+  .basic button,
+  .master button {
+    color: white;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-repeat: no-repeat;
+  }
+  .basic button,
+  .professional button,
+  .master button {
+    transition: all ease-in-out 0.3s;
+  }
+
+.basic button:hover,
+.professional button:hover,
+.master button:hover {
+    background: transparent;
+    border-color: hsl(234, 14%, 74%);
+    color: hsl(237, 63%, 64%);
+    border-width: 1px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .professional button:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-width: 1px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .attribution a 
+  {
+    color: hsl(228, 45%, 44%);
+  }
